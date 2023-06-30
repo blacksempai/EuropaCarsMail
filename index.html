@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <title></title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* -------------------------------------
+            GLOBAL RESETS
+        ------------------------------------- */
+        
+        /*All the styling goes here*/
+
+        table, td, div, h1, p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+        }
+
+        .f500 {font-weight: 500!important;}
+        .f600 {font-weight: 600!important;}
+        .pb {padding-bottom: 20px;}
+
+        body {
+            background-color: #f6f6f6;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%; 
+        }
+    
+        table {
+            border-collapse: separate;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            width: 100%; }
+            table td {
+            font-size: 14px;
+            vertical-align: top; 
+        }
+    
+        /* -------------------------------------
+            BODY & CONTAINER
+        ------------------------------------- */
+    
+        .body {
+            background-color: #f6f6f6;
+            width: 100%; 
+        }
+    
+        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+        .container {
+            display: block;
+            margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 700px;
+            padding: 10px;
+            width: 700px; 
+        }
+    
+        /* This should also be a block element, so that it will fill 100% of the .container */
+        .content {
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            max-width: 700px;
+            padding: 10px; 
+        }
+    
+        /* -------------------------------------
+            HEADER, FOOTER, MAIN
+        ------------------------------------- */
+
+        .header td {
+            padding: 0 20px;
+            padding-bottom: 30px;
+        }
+
+        .main {
+            background: #ffffff;
+            border-radius: 10px;
+            width: 100%; 
+        }
+    
+        .wrapper {
+            box-sizing: border-box;
+            padding: 30px 40px; 
+        }
+    
+        .content-block {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    
+        .footer {
+            clear: both;
+            margin-top: 10px;
+            text-align: center;
+            width: 100%; 
+        }
+            .footer td,
+            .footer p,
+            .footer span,
+            .footer a {
+            color: #999999;
+            font-size: 12px;
+            text-align: center; 
+        }
+    
+        /* -------------------------------------
+            TYPOGRAPHY
+        ------------------------------------- */
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #000000;
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 0;
+            margin-bottom: 30px; 
+        }
+    
+        h1 {
+            font-size: 35px;
+            font-weight: 300;
+            text-align: center;
+            text-transform: capitalize; 
+        }
+
+        p,
+        ul,
+        ol {
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+            margin-bottom: 15px; 
+        }
+    
+        ul,
+        ol {
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+            p li,
+            ul li,
+            ol li {
+            list-style-position: inside;
+            margin-left: 10px; 
+        }
+    
+        a {
+            color: #3498db;
+            text-decoration: underline; 
+        }
+    
+        /* -------------------------------------
+            BUTTONS
+        ------------------------------------- */
+        .btn {
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .btn > tbody > tr > td {
+            padding-bottom: 15px; 
+        }
+        .btn table {
+            width: 100%; 
+        }
+        .btn table td {
+            background-color: #ffffff;
+            border-radius: 5px;
+            text-align: center; 
+        }
+        .btn a {
+            display: block;
+            max-width: 225px;
+            width: 225px;
+            background-color: #ffffff;
+            border: solid 1px #0085FF;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #0085FF;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Inter' sans-serif;
+            margin: 0;
+            padding: 12px 25px;
+            text-decoration: none;
+            text-transform: capitalize; 
+        }
+    
+        .btn-primary a {
+            background-color: #0085FF;
+            border-color: #0085FF;
+            color: #ffffff; 
+        }
+    
+        /* -------------------------------------
+            OTHER STYLES THAT MIGHT BE USEFUL
+        ------------------------------------- */
+        .last {
+            margin-bottom: 0; 
+        }
+    
+        .first {
+            margin-top: 0; 
+        }
+    
+        .align-center {
+            text-align: center; 
+        }
+    
+        .align-right {
+            text-align: right; 
+        }
+    
+        .align-left {
+            text-align: left; 
+        }
+    
+        .clear {
+            clear: both; 
+        }
+    
+        .mt0 {
+            margin-top: 0; 
+        }
+    
+        .mb0 {
+            margin-bottom: 0; 
+        }
+    
+        .preheader {
+            color: transparent;
+            display: none;
+            height: 0;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+            visibility: hidden;
+            width: 0; 
+        }
+    
+        .powered-by a {
+            text-decoration: none; 
+        }
+    
+        hr {
+            border: 0;
+            border-bottom: 1px solid #BBBBBB66;
+            margin: 10px 0; 
+        }
+    
+        /* -------------------------------------
+            RESPONSIVE AND MOBILE FRIENDLY STYLES
+        ------------------------------------- */
+        @media only screen and (max-width: 720px) {
+            table.body h1 {
+            font-size: 28px !important;
+            margin-bottom: 10px !important; 
+            }
+            table.body p,
+            table.body li,
+            table.body td,
+            table.body span{
+            font-size: 16px !important; 
+            }
+            table.body .wrapper,
+            table.body .article {
+            padding: 20px !important; 
+            padding-top: 40px !important;
+            }
+            table.body .content {
+            padding: 0 !important; 
+            }
+            table.body .container {
+            padding: 0 !important;
+            width: 100% !important; 
+            }
+            table.body .main {
+            border-left-width: 0 !important;
+            border-radius: 0 !important;
+            border-right-width: 0 !important; 
+            }
+
+            table.body .img-responsive {
+            height: auto !important;
+            max-width: 100% !important;
+            width: auto !important; 
+            }
+        }
+    
+        /* -------------------------------------
+            PRESERVE THESE STYLES IN THE HEAD
+        ------------------------------------- */
+        @media all {
+            .ExternalClass {
+            width: 100%; 
+            }
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+            line-height: 100%; 
+            }
+            .apple-link a {
+            color: inherit !important;
+            font-family: inherit !important;
+            font-size: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+            text-decoration: none !important; 
+            }
+            #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            }
+            .btn-primary a:hover {
+            background-color: #2294ff !important;
+            border-color: #2294ff !important; 
+            } 
+        }
+    
+    </style>
+</head>
+<body style="margin:0;padding:0;">
+    <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="header">
+                            <tr>
+                                <td>
+                                    <img src="logo.svg" alt="Europa Cars" width="162" height="20">
+                                    
+                                    <hr>
+                                    
+                                    <p><span class="f500">Einladung zur Zusammenarbeit</span> (bitte an Fahrzeugmanagement weiterleiten)</p>            
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" >
+                            <tr>
+                                <td align="left" class="pb">
+                                    Sehr geehrte Damen und Herren,
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb f600">
+                                    unsere Firma spezialisiert sich auf den <u>Ankauf und Weitervertrieb von Firmenfahrzeugen.</u> Wir kaufen alle Arten von PKW/LKW, Busse, Transporter usw., auch Unfallwagen oder Kfz mit Defekten (z.B. mit Motorschäden usw.).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb">
+                                    Leider wird es auf dem Kfz-Markt immer weniger für die Firmenfahrzeugen bezahlt (zu Preisminderungen führen z.B. große km-Stände usw.) und ein Ende dieser Situation bedauerlicherweise nicht abzusehen ist.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb f600">
+                                    <u>Wichtig für Sie ist es, dass</u>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb f600">
+                                    <ul>
+                                        <li>wir deutlich bessere Konditionen als die anderen Anbieter (Händler, Autohäuser usw.) oder die Schwackeliste anbieten.</li>
+                                        <li>Gekauft wird OHNE Gewährleistung („gekauft wie gesehen“)</li>
+                                        <li>Fast 100% aller KFZ werden von uns nach Ausland verkauft (meistens nach Ukraine, Afrika usw.)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Bei uns läuft alles zügig und - soweit es möglich ist – unbürokratisch Wenn Sie ein Firmenfahrzeug verkaufen möchten, füllen Sie bitte das beiliegende
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb">
+                                    Form aus - wir kontaktieren Sie dann umgehend.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb f600">
+                                    Wenn alles passt, holen wir das Kfz <u>innerhalb der nächsten 24</u> Stunden bei Ihnen ab.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <p>Wir freuen uns auf eine gute Zusammenarbeit.</p>
+                                    <p>Mit freundlichen Grüßen, EuropaCars</p>
+                                </td>
+                                <td>
+                                    <img src="signature.svg" alt="Europa Cars" width="113" height="57">                                    
+                                </td>
+                            </tr>
+                        </table>
+                    
+                       <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center"> <a href="" target="_blank">Webseite</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p class="f600 align-center">
+                            P.S. Seriöse Abwicklung, Echtzeitüberweisung oder Barbezahlung sind für uns selbstverständlich
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">Copyright © 2023 EuropaCars. Alle Rechte vorbehalten.</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+</body>
+</html>
